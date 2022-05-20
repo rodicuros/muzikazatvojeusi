@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" />
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <title>MuzikaZaTvojeUši</title>
+        <h1>MuzikaZaTvojeUši</h1>
+    </head>
+    <body>
+        <a href="index1.html">
+            <img class="logo" src="imgs/logo.png" />
+        </a>
+        <nav>
+            <ul>
+                <li><a href="stranice/index2.html"> Estrada </a></li>
+                <li><a href="stranice/index3.html"> Stranica 2 </a></li>
+                <li><a href="stranice/index4.html"> Stranica 3 </a></li>
+                <li><a href="stranice/o-autoru.html"> O-autoru </a></li>
+            </ul>
+        </nav>
+        <p>
+            Namenjeno istinskim ljubiteljima muzike. Ovaj sajt predstavlja
+            najbolju internet platformu za uživanje u muzici, <br />
+            ona Vam omogucava slušanje i skidanje muzike svih žanrova, od 70-ih
+            godina 20. veka do kraja 2021. godine. Ovaj sajt Vam pruža mogucnost
+            da do željene pesme <br />dođete birajuci izvođača.
+        </p>
+        <div class="search">
+            <h1>Pretražite izvođače estrade</h1>
+            <input
+                list="pevaci"
+                onkeydown="if (event.keyCode == 13)
+            window.location='stranice/index2.html#' + this.value"
+            />
+            <datalist id="pevaci">
+                <option value="zeljko">Zeljko Joksimovic</option>
+                <option value="saban">Saban Saulic</option>
+                <option value="haris">Haris Dzinovic</option>
+                <option value="sasa">Sasa Kovacevic</option>
+                <option value="tose">Tose Proeski</option>
+                <option value="zdravko">Zdravko Colic</option>
+            </datalist>
+            <h1>Pretražite strane izvođače</h1>
+            <input
+                list="strani"
+                autocomplete="off"
+                onkeydown="if (event.keyCode == 13)
+            window.location='stranice/index3.html#' + this.value"
+            />
+            <datalist id="strani">
+                <option value="eminem">Eminem</option>
+                <option value="tupac">Tupac</option>
+                <option value="50cent">50 Cent</option>
+                <option value="nas">Nas</option>
+                <option value="duran">Duran Duran</option>
+                <option value="houston">Whitney Houston</option>
+                <option value="jackson">Michael Jackson</option>
+                <option value="prince">Prince</option>
+                <option value="marley">Bob Marley</option>
+                <option value="ziggy">Ziggy Marley</option>
+                <option value="grant">Eddy Grant</option>
+                <option value="ub40">UB40</option>
+                <option value="desmond">Desmond Dekker</option>
+            </datalist>
+            <h1>Pretražite globalnu rok scenu</h1>
+            <input
+                list="strani"
+                autocomplete="off"
+                onkeydown="if (event.keyCode == 13)
+            window.location='stranice/index4.html#' + this.value"
+            />
+            <datalist id="strani">
+                <option value="zeppelin">Led Zeppelin</option>
+                <option value="sabbath">Black Sabbath</option>
+                <option value="beatles">The Beatles</option>
+                <option value="purple">Deep Purple</option>
+                <option value="stones">The Rolling Stones</option>
+                <option value="ekv">Ekatarina Velika</option>
+                <option value="corba">Riblja Čorba</option>
+                <option value="orgazam">Električni orgazam</option>
+                <option value="disciplina">Disciplina kičme</option>
+                <option value="smak">SMAK</option>
+            </datalist>
+        </div>
+    </body>
+</html>
